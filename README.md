@@ -35,3 +35,4 @@ ctionWrapper@297ea53a" with isolation "serializable"
 13:29:55,882 (main) DEBUG [DataNucleus.Datastore.Schema] - CREATE INDEX IDX_TENANT ON PERSON (TENANT)
 13:29:55,883 (main) DEBUG [DataNucleus.Datastore.Schema] - SQL Execution Time = 1 ms
 ```
+using DN core/api-jpa/rdbms from GitHub master, with HSQLDB 2.3.3 using Java 11.0.11
