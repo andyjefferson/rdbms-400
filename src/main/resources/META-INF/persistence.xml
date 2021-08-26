@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd" version="2.2">
+
+    <persistence-unit name="MyTest">
+        <!-- Add all of your model classes here -->
+        <class>mydomain.model.Person</class>
+        <exclude-unlisted-classes />
+        <properties>
+            <!-- Update these datastore details if different -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:nucleus"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+            <property name="datanucleus.tenantId" value="DN1"/>
+
+            <property name="datanucleus.schema.autoCreateAll" value="true"/>
+            <property name="datanucleus.rdbms.statementLogging" value="PARAMS_INLINE"/>
+        </properties>
+    </persistence-unit>
+
+</persistence>
